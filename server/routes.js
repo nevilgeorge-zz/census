@@ -9,7 +9,7 @@ var errors = require('./components/errors');
 module.exports = function(app) {
 
   // Insert routes below
-  app.use('/api/Students', require('./api/Student'));
+  app.use('/api/users', require('./api/user'));
   app.use('/api/things', require('./api/thing'));
   
   // All undefined asset or api routes should return a 404
@@ -18,11 +18,6 @@ module.exports = function(app) {
 
   // All other routes should redirect to the index.html
   app.route('/signup')
-    .get(function(req, res) {
-      res.render();
-    });
-
-  app.route('/Student/:id')
     .get(function(req, res) {
       res.render();
     });
