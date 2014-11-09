@@ -5,7 +5,16 @@ angular.module('censusApp')
     $scope.menu = [{
       'title': 'Home',
       'link': '/'
-    }];
+    }, 
+    {
+      'title': 'Sign up',
+      'link': '/signup'
+    },
+    {
+      'title': 'Profile',
+      'link': '/Student/:id'
+    }
+    ];
 
     $scope.isCollapsed = true;
 
